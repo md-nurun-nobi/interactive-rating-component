@@ -9,8 +9,12 @@ This is my solution to the Interactive Rating Component challenge from Frontend 
 
 ## Overview
 
-Users can select a rating from 1 to 5 and submit their feedback. After submitting, a thank-you message displays the selected rating.
+This is my solution to the Frontend Mentor
+Interactive Rating Component challenge.
 
+### Screenshot
+
+![Interactive Rating Component Preview](./screenshots/interactive-rating-preview.png)
 ### Features
 
 - Select a rating from 1 to 5.

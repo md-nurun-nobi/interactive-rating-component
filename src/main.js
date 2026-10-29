@@ -5,7 +5,7 @@ const responsibleButton = document.querySelector (".submit-btn");
 const mainRating = document.querySelector (".main-rating-part");
 const thankYouRating = document.querySelector (".thankyou-rating-part");
 const selectedRatingText = document.querySelector (".selected-btn");
-
+const errorMessage = document.querySelector("#error-message");
 
 let selectedRating = null;
 ratingButtons.forEach((button) => {
@@ -29,15 +29,19 @@ responsibleButton.addEventListener ("click", () => {
     
 if (selectedRating === null) {
   
- console.log("Please select a rating first.");
+   errorMessage.textContent = "Please select a rating first.";
+    return;
   
-} else {
+}
+
+
+else {
 
 mainRating.classList.add("hidden");
 thankYouRating.classList.remove ("hidden");
 selectedRatingText.textContent = `You selected ${selectedRating} out of 5`;
 
 };
-
+ errorMessage.textContent = "";
 });
 
